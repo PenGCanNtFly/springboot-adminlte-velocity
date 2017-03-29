@@ -258,10 +258,20 @@ desired effect
       <ul class="sidebar-menu">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="/firstpage"><i class="fa fa-link"></i> <span>FirstPage</span></a></li>
-        <li><a href="/secondpage"><i class="fa fa-link"></i> <span>SecondPage</span></a></li>
-        <li class="treeview" ng-class="{active: '$!expand' == 'Multilevel'}">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+        <li><a href="/firstpage"><i class="fa fa-link"></i> <span>一级目录（链接）</span></a></li>
+        <li class="active treeview" ng-class="{active: '$!expand' == '二级目录'}">
+            <a href="#"><i class="fa fa-gears"></i> <span>二级目录</span>
+                <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="/secondpage"><i class="fa fa-link"></i>Link in level 1</a></li>
+                <li><a href="#"><i class="fa fa-genderless"></i>Link in level 2</a></li>
+            </ul>
+        </li>
+        <li class="treeview" ng-class="{active: '$!expand' == '三级目录'}">
+          <a href="#"><i class="fa fa-gears"></i> <span>三级目录</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -271,7 +281,7 @@ desired effect
                 <a href="#"><i class="fa fa-genderless"></i>Link in level 1</a>
             </li>
             <li ng-class="{active: '$!adminSubMenu' == 'Link in level 2'}">
-                <a href="#"><i class="fa fa-cloud"></i>Link in level 2
+                <a href="#"><i class="fa fa-genderless"></i>Link in level 2
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>

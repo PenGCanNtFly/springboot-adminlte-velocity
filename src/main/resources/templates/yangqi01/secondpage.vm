@@ -1,3 +1,7 @@
+#set($!adminSubMenu = "Link in level 1")
+#set($!expand = "二级目录")
+
+
     <section class="content">
 
       <!-- Your Page Content Here -->
