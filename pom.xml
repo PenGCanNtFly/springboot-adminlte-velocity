@@ -6,7 +6,7 @@
 	<groupId>com.hanzo.springboot.adminlte.velocity</groupId>
 	<artifactId>springboot-adminlte-velocity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>springboot-adminlte-velocity</name>
 	<description>Demo project for Bootspringboot-adminlte-velocity</description>
